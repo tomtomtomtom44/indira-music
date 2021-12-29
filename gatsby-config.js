@@ -25,6 +25,8 @@ module.exports = {
         name: `blog`,
         path: `${__dirname}/blog`
       }
-    }
+    },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-react-helmet"
   ],
 };
