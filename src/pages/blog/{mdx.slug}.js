@@ -4,8 +4,9 @@
     import Layout from '../../components/layout'
 
     const BlogPost = ({ data }) => {
-        return (
-            <Layout pageTitle={data.mdx.frontmatter.title}>
+      const pageDescription = `Post du blog Indira Music intitulé ${data.mdx.frontmatter.title}`  
+      return (
+            <Layout pageTitle={data.mdx.frontmatter.title} description={pageDescription}>
                 <p>{data.mdx.frontmatter.date}</p>
                 <MDXRenderer>
                     {data.mdx.body}

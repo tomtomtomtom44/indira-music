@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Indira music blog",
+    description: "Un blog pour parler de l'actualité de Indira music"
   },
   plugins: [
     "gatsby-plugin-image",
@@ -25,6 +26,7 @@ module.exports = {
         name: `blog`,
         path: `${__dirname}/blog`
       }
-    }
+    },
+    "gatsby-plugin-react-helmet"
   ],
 };
